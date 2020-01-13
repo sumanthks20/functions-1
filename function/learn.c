@@ -135,7 +135,38 @@ int main()
    printf("\n|          |                                           |  return sum;                              |");
    printf("\n|          |                                           |  }                                        |");
    printf("\n|__________|___________________________________________|___________________________________________|");
-
+   printf("\n Location of function refers to the placement of the function definition in relation to the main program .There are mainly two ways to place a program:\n");
+   printf(" •type 1:placing a function first followed by placing the entire program.\n");
+   printf(" •type 2:placing function declaration before main program followed by main program and the followed by function body.\n");
+   printf("\n\n Structure of a function :\n");
+   printf("\n Function is a group of statements that together to perform a specific task.\n Structure of a function is explained by taking an example of a program to display in element of array using functions.\n");
+   printf("\n\n /*program to display  'n' elements of array*/\n");
+   printf("#include<stdio.h>\nvoid display(int b[10]);\nint n;\nvoid main()\n{\n int i,a[10];\n printff(\"enter the number of elements\"); \n scanf(\"%%d \",&n);\n printf(\"enter elements \\n\");for(i=0;i<n;i++)\n scanf(\"%%d\",&a[i]);\n printf(\"element are\");\n display(a);\n getch();\n}\nvoid display(int b[10])\n{\n int i;\n for(i=0;i<n;i++)\n  print(\"%%d\",&b[i]);\n}\n");
+   printf(" \n\n Program to compute the factorial of a given number n using recursion*/\n");
+   printf(" #include\"stdio.h\" \n int fact(int);\n void main()\n {\n  int n ,ans;\n  printf(\"enter the value of n\");\n  scanf(\"%%d\",&n);\n  ans=fact(n);\n  printf(\"ans=%%d\",ans);\n  getch();\n }\n");
+   printf(" int fact(int n )\n {\n  if(n==0)\n  {\n   return 1;\n  }\n  else\n  {\n   return n*fact(n-1);\n  }\n }\n");
+   printf("\n METHOD:\n factorial(5)=5*factorial(4)\n 5*4*factorial(3)\n 5*4*3*factorial(2)\n 5*4*3*2*factorial(1)\n 5*4*3*2*1*factorial(0)\n 5*4*3*2*1*1\n");
+   printf("\n Output :\n  enter the value of n\n  5\n  ans=120");
+   printf("\n\n------------------*----------------------\n");
+   printf("\n\n /* Example for string passing by reference or call by reference*/\n");
+   printf(" #include<stdio.h>\n void display(char ch[]);\n void main()\n {\n  char c[20];\n  printf(\"enter the string\");\n  gets(c);\n  display(c); /*passing entire string c to function */\n }\n");
+   printf(" void display(char ch[])\n {\n  printf(\"string is:\");\n  puts(ch); /*display enter string at a time*/\n\n");
+   printf(" Recursive Function :\n");
+   printf(" •Recursive function are there function that call themselves during than execution until certain conditions are satisfied.\n");
+   printf(" •note while using recursion.programs need to be careful to define an exit condition from the recursion function ,otherwise it will go in infinite loop'\n");
+   printf("                 __________________\n") ;
+   printf("          ------>||rec_function()||\n");
+   printf("          |      ||______________||\n");
+   printf("     _____|_____         |         \n");
+   printf("     | body    |        /\\  \n");
+   printf("     |_________| no    /is\\ \n");
+   printf("          |___________/exit\\\n");
+   printf("                      \\cond/ \n");
+   printf("                       \\  /  \n");
+   printf("                        \\/ yes\n");
+   printf("                   _____|_____\n") ;
+   printf("                   | stop    |\n");
+   printf("                   |_________|\n");
 
 
 
